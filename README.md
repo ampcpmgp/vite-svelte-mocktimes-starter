@@ -1,10 +1,10 @@
-# Parcel & Svelte & am-mocktimes Starter kit
+# Vite & Svelte & am-mocktimes Starter kit
 
 ## Setup
 
 ```shell
 npm install -g degit
-npx degit ampcpmgp/parcel-svelte-mocktimes-starter
+npx degit ampcpmgp/vite-svelte-mocktimes-starter
 npm i
 ```
 
