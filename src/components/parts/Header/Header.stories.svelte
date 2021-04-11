@@ -21,16 +21,6 @@
   <Header {...args} on:click={args.onClick} />
 </Template>
 
-<Story
-  name="Text"
-  args={{
-    text: "Text",
-  }}
-/>
+<Story name="Text" args={{ text: "Text" }} />
 
-<Story
-  name="Emoji"
-  args={{
-    text: "😀 😎 👍 💯",
-  }}
-/>
+<Story name="Emoji" args={{ text: "😀 😎 👍 💯" }} />
