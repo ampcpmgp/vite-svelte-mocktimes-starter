@@ -4,16 +4,56 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test": "ava",
+    "test:watch": "npm run test -- --watch",
+    "dist": "run-s dist:*",
+    "dist:clean": "rimraf dist",
+    "dist:build": "vite build  --base=./",
+    "lint": "eslint --ignore-path .gitignore **/*.{js,svelte}",
+    "format": "prettier --ignore-path .gitignore --write **/*.{js,svelte}",
+    "screenshot": "am-mocktimes--screenshot",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.15",
     "@rollup/plugin-yaml": "^3.0.0",
+    "@storybook/addon-actions": "^6.2.7",
+    "@storybook/addon-essentials": "^6.2.7",
+    "@storybook/addon-links": "^6.2.7",
+    "@storybook/addon-svelte-csf": "^1.0.0",
+    "@storybook/svelte": "^6.2.7",
     "@sveltejs/vite-plugin-svelte": "next",
     "am-mocktimes": "^4.0.0-alpha.0",
-    "svelte": "^3.35.0",
-    "vite": "^2.1.5"
+    "babel-loader": "^8.2.2",
+    "svelte": "^3.37.0",
+    "svelte-loader": "^3.1.0",
+    "vite": "^2.1.5",
+    "am-mocktimes-addon-screenshot": "^0.1.2",
+    "am-parts-cli": "^0.3.0",
+    "ava": "^3.12.1",
+    "eslint": "^7.14.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "esm": "^3.2.25",
+    "less": "^3.11.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.6",
+    "prettier": "^1.19.1",
+    "prettier-plugin-svelte": "^1.4.0",
+    "rimraf": "^3.0.1"
   },
   "dependencies": {
+    "modern-css-reset": "^1.1.0",
     "svelte-spa-router": "^3.1.0"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ],
+    "files": [
+      "**/*.test.js"
+    ]
   }
 }
