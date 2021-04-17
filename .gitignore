@@ -7,10 +7,8 @@ node_modules/
 # am-mocktimes
 .am-mocktimes-img/
 
-# parcel-bundler
-.cache/
+# vite
 dist/
-dist-no-minified/
 
 # storybook
 storybook-static/
