@@ -2,11 +2,15 @@
 
 ## Setup
 
+Click on the `Use this template` button above, or run the following command.
+
 ```shell
 npm install -g degit
 npx degit ampcpmgp/vite-svelte-mocktimes-starter
 npm i
 ```
+
+Next
 
 * edit `package.json` `name` property
 * edit `README.md`
