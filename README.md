@@ -10,7 +10,7 @@ npx degit ampcpmgp/vite-svelte-mocktimes-starter
 npm i
 ```
 
-Next
+Then
 
 * edit `package.json` `name` property
 * edit `README.md`
