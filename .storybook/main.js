@@ -8,4 +8,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-svelte-csf",
   ],
+  core: {
+    builder: "storybook-builder-vite",
+  },
 };
