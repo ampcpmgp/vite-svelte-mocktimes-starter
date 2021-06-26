@@ -45,7 +45,7 @@ npm run format
 
 or vscode extensions <https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>
 
-### Generate parts template
+## Generate parts template
 
 ```shell
 npx am-parts -n <COMPONENT_NAME>
