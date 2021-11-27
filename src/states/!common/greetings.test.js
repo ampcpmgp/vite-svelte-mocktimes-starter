@@ -1,8 +1,11 @@
-import test from "ava";
+import { test } from "uvu";
+import * as assert from "uvu/assert";
 import { greeting } from "./greetings";
 
-test("挨拶が出来る", (t) => {
+test("挨拶が出来る", () => {
   greeting.subscribe((value) => {
-    t.is(value, "Hello world!");
+    assert.is(value, "Hello world!");
   });
 });
+
+test.run();
