@@ -1,11 +1,8 @@
-import { test } from "uvu";
-import * as assert from "uvu/assert";
+import { test, expect } from "vitest";
 import { greeting } from "./greetings";
 
 test("挨拶が出来る", () => {
   greeting.subscribe((value) => {
-    assert.is(value, "Hello world!");
+    expect(value).toEqual("Hello world!");
   });
 });
-
-test.run();
